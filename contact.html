@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stephens Family | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Stephens Family</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Use this page to let people know how to reach you.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div>
+      <h2>How to reach us</h2>
+      <p>You can list a contact email here, such as a Proton alias at your domain, or keep it simple:</p>
+      <ul>
+        <li>Email: <strong>info@stephens-az.us</strong> (example)</li>
+        <li>You can change this anytime in the HTML.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Simple contact form (optional)</h2>
+      <p>This form doesn’t do anything yet by itself. You can later hook it to a form service, or just leave it as basic info.</p>
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com">
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Your message"></textarea>
+        </label>
+        <button type="submit" disabled>Send (not active yet)</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Stephens-AZ.us</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
