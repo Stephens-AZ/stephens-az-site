@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container">
     <div class="logo">Stephens Family</div>
@@ -19,53 +20,49 @@
   </div>
 </header>
 
-<section class="page-header">
-  <div class="container">
-    <h1>Contact</h1>
-    <p>Use this page to let people know how to reach you.</p>
-  </div>
-</section>
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>If you need to get in touch, this is the easiest way.</p>
+    </div>
+  </section>
 
-<section class="section">
-  <div class="container grid-2">
-    <div>
-      <h2>How to reach us</h2>
-      <p>You can list a contact email here, such as a Proton alias at your domain, or keep it simple:</p>
-      <ul>
-        <li>Email: <strong>info@stephens-az.us</strong> (example)</li>
-        <li>You can change this anytime in the HTML.</li>
-      </ul>
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Email</h2>
+        <p>
+          The best way to reach me is by email. You can use this address:
+        </p>
+        <p>
+          <strong>contact@stephens-az.com</strong>
+        </p>
+        <p style="font-size: 0.9rem; color: #555;">
+          (Once email is fully set up on this domain, this will go to my inbox.)
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Notes</h3>
+        <ul>
+          <li>If you already know us, feel free to use the same contact methods you normally do.</li>
+          <li>This site is personal, not a business — no sales or marketing needed.</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h2>Simple contact form (optional)</h2>
-      <p>This form doesn’t do anything yet by itself. You can later hook it to a form service, or just leave it as basic info.</p>
-      <form class="contact-form">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name">
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com">
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" placeholder="Your message"></textarea>
-        </label>
-        <button type="submit" disabled>Send (not active yet)</button>
-      </form>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="container">
-    <p>© <span id="year"></span> Stephens-AZ.us</p>
+    <p>© <span id="year"></span> Stephens-AZ.com</p>
   </div>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
