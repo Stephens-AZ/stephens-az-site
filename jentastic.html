@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jentastic Crafts | Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="logo">Stephens Family</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="jentastic.html" class="active">Jentastic Crafts</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1>Jentastic Crafts</h1>
+      <p>A gallery of handcrafted projects — made with creativity, patience, and probably a glue gun.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container gallery-grid">
+
+      <!-- Item 1 -->
+      <div class="gallery-item">
+        <img src="images/craft1.jpg" alt="Craft Project 1">
+        <p>Craft Project #1</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item">
+        <img src="images/craft2.jpg" alt="Craft Project 2">
+        <p>Craft Project #2</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item">
+        <img src="images/craft3.jpg" alt="Craft Project 3">
+        <p>Craft Project #3</p>
+      </div>
+
+      <!-- Add more as needed -->
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Stephens-AZ.com</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
