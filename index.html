@@ -7,48 +7,70 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container">
     <div class="logo">Stephens Family</div>
     <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="jentastic.html" class="btn">View Jentastic Crafts</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
       <a href="gallery.html">Gallery</a>
+      <a href="jentastic.html">Jentastic Crafts</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="page-header">
-  <div class="container">
-    <h1>About This Site</h1>
-    <p>A simple place to share Jentastic Crafts, Ancestry, Projects, Life with pets and the things we enjoy.</p>
-  </div>
-</section>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Stephens-AZ</h1>
+      <p>A simple personal site for Jentastic Crafts, Family and Dogs, Outdoor Adventures and whatever else we feel like sharing.</p>
+      <a href="about.html" class="btn">More about this site</a>
+      <a href="jentastic.html" class="btn">View Jentastic Crafts</a>
+    </div>
+  </section>
 
-<section class="section">
-  <div class="container">
-    <div class="grid-2">
-      <div>
-        <h2>About Us</h2>
-        <p>We live in Northern Arizona and created this site as a personal place to share projects, hobbies, and parts of everyday life. Nothing fancy — just simple and real.</p>
-
-        <p>When we're not working, you might find us spending time with family and pets, working on projects, or getting outdoors whenever possible.</p>
+  <!-- Three main areas -->
+  <section class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Family & Everyday Life</h3>
+        <p>Basic info about who we are, where we are, and what life looks like for us right now.</p>
+        <a href="about.html" class="link">Go to About →</a>
       </div>
 
       <div class="card">
-        <h3>What This Site Is</h3>
-        <ul>
-          <li>A home for photos</li>
-          <li>A place to share projects</li>
-          <li>A simple personal hub — nothing commercial</li>
-        </ul>
+        <h3>Projects & Hobbies</h3>
+        <p>Odds and ends: projects, hobbies, and anything else that doesn’t fit in a neat box.</p>
+        <a href="gallery.html" class="link">View general gallery →</a>
+      </div>
+
+      <div class="card">
+        <h3>Jentastic Crafts</h3>
+        <p>Handmade crafts by Jen — grouped into seasonal, home décor, and custom pieces.</p>
+        <a href="jentastic.html" class="link">See Jentastic gallery →</a>
       </div>
     </div>
-  </div>
-</section>
-     
+  </section>
+
+  <!-- Latest / updates section -->
+  <section class="section alt">
+    <div class="container">
+      <h2>What’s Here (and What Isn’t)</h2>
+      <p>This is not social media, not a storefront, and not a blog with a posting schedule. It’s just a place to:</p>
+      <ul>
+        <li>Drop a few photos and projects so they don’t get lost.</li>
+        <li>Give friends and family a single link to check out.</li>
+        <li>Keep things simple and under our control.</li>
+      </ul>
+      <p style="font-size: 0.9rem; color: #555;">
+        If something changes or there’s a new project worth sharing, it’ll eventually show up here or in one of the galleries.
+      </p>
+    </div>
+  </section>
+</main>
 
 <footer class="site-footer">
   <div class="container">
@@ -59,5 +81,6 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
